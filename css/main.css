@@ -1,0 +1,59 @@
+#title-image
+{
+    background-image: url("../img/RedYellowGrain.png");
+    height: 100%;
+}
+
+@media (min-width: 320px) {
+
+    .logo-freli{
+        width: auto;
+        height: 100px;
+    }
+}
+@media (min-width: 641px) {
+
+    .logo-freli{
+        width: auto;
+        height: 200px;
+    }
+}
+@media (min-width: 961px) {
+
+    .logo-freli{
+        width: auto;
+        height: 300px;
+    }
+}
+
+#nav_bar {
+    background: #fcffe4;
+    color: #257559;
+}
+
+.centre{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+.navbar.center .navbar-inner .nav {
+    float: none;
+    display:inline-block;
+}
+.desktopsmartphone-icon{
+    max-height: 50%;
+    max-width: 50%;
+}
+
+.info{
+    text-align: center;
+    align-items: center;
+}
+
+.freli-navbar{
+    width: 119px;
+    height: 50px;
+}
