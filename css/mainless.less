@@ -1,0 +1,108 @@
+@DarkRedColor: #9b2c28;
+@FreliFont: 'Ubuntu', sans-serif;
+@DarkGreen: #0f6718;
+
+.navbar{
+  background-color: @DarkRedColor;
+}
+
+#title-image
+{
+  background-image: url("../img/RedYellowGrain.png");
+  height: 100%;
+}
+
+@media (min-width: 320px) {
+
+  .logo-freli{
+    width: auto;
+    height: 100px;
+  }
+}
+@media (min-width: 641px) {
+
+  .logo-freli{
+    width: auto;
+    height: 200px;
+  }
+}
+@media (min-width: 961px) {
+
+  .logo-freli{
+    width: auto;
+    height: 300px;
+  }
+}
+
+.centre{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navbar.center .navbar-inner {
+  text-align: center;
+}
+.navbar.center .navbar-inner .nav {
+  float: none;
+  display:inline-block;
+}
+.desktopsmartphone-icon{
+  max-height: 50%;
+  max-width: 50%;
+}
+
+.freli-navbar{
+  width: 119px;
+  height: 50px;
+}
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
+
+.nav > li > a:focus {
+  background-color: @DarkRedColor;
+  color: black;
+  font-family: @FreliFont;
+}
+
+.nav > li > a:hover {
+  background-color: @DarkRedColor;
+  color: black;
+  font-family: @FreliFont;
+}
+
+.nav > li > a {
+  background-color: @DarkRedColor;
+  color: #ffffff;
+  font-family: @FreliFont;
+}
+
+.verticalLine {
+  border-right: solid @DarkGreen;
+  opacity: 0.2;
+}
+
+.align{
+  display: flex;
+}
+
+
+.info{
+  text-align: center;
+  align-items: center;
+  margin-top: 10px;
+  font-family: @FreliFont;
+}
+.info:hover img{
+  max-height: 60%;
+  max-width: 60%;
+}
+.info:hover .websiteWord{
+  font-size: 150%;
+}
+
+.websiteWord{
+  color: @DarkGreen;
+  font-weight: bold;
+}

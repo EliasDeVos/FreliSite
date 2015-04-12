@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="css/normalize.css"/>
-    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet/less" type="text/css" href="css/mainless.less">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
     <title>Freli</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-inner">
+            <div class="collapse navbar-collapse navbar-inner" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
@@ -39,27 +40,34 @@
     </nav>
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
-                <div class="info">
-                    <img src="img/DesktopSmartphoneIcon.png" class="centre desktopsmartphone-icon">
-                    blablablablalblalblbelblelbleblelblelble<br>
-                    blablablablalblalblbelblelbleblelblelble<br>
-                    blablablablalblalblbelblelbleblelblelble<br>
-                    blablablablalblalblbelblelbleblelblelble<br>
-                    blablablablalblalblbelblelbleblelblelble<br>
+            <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="row align">
+                    <div class="info">
+                        <img src="img/DesktopSmartphoneIcon.png" class="centre desktopsmartphone-icon">
+                        <span class="websiteWord">WebSites</span><br>
+                        maken voor particulieren en bedrijven<br>
+                        Volledig <span class="websiteWord">responsief</span>, zowel op smartphone als op desktop<br>
+                        Eenvoudig maar <span class="websiteWord">elegant</span> design<br>
+                        op maat gemaakt<br>
+                    </div>
+                    <div class="verticalLine hidden-xs"></div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="info">
-                    <img src="img/DesktopSmartphoneIcon.png" class="centre desktopsmartphone-icon">
-                    blablablablalblalblbelblelbleblelblelble<br>
-                    blablablablalblalblbelblelbleblelblelble<br>
-                    blablablablalblalblbelblelbleblelblelble<br>
-                    blablablablalblalblbelblelbleblelblelble<br>
-                    blablablablalblalblbelblelbleblelblelble<br>
+            <div class="col-lg-4 col-md-6  col-xs-12">
+                <div class="row align">
+                    <div class="info">
+                        <img src="img/DesktopSmartphoneIcon.png" class="centre desktopsmartphone-icon">
+                        blablablablalblalblbelblelbleblelblelble<br>
+                        blablablablalblalblbelblelbleblelblelble<br>
+                        blablablablalblalblbelblelbleblelblelble<br>
+                        blablablablalblalblbelblelbleblelblelble<br>
+                        blablablablalblalblbelblelbleblelblelble<br>
+                    </div>
+                    <div class="verticalLine hidden-xs hidden-md"></div>
                 </div>
+
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6  col-xs-12">
                 <div class="info">
                     <img src="img/DesktopSmartphoneIcon.png" class="centre desktopsmartphone-icon">
                     blablablablalblalblbelblelbleblelblelble<br>
@@ -89,7 +97,7 @@
             <img src="img/FreliZwartRoodSolutions.png" class="centre logo-freli"/>
         </div>
     </div>
-
+<script src="js/less.js" type="text/javascript"></script>
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/main.js"></script>
