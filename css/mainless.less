@@ -95,14 +95,14 @@
 
 /* What we do*/
 .what-we-do{
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .what-we-do-header span{
   font-size: 200%;
   font-family: @FreliFont;
 }
 .what-we-do-header{
+  margin-top: 175px;
   text-align: center;
   padding-bottom: 50px;
 }
@@ -116,9 +116,15 @@
   margin-top: 10px;
   font-family: @FreliFont;
 }
+.info img{
+  margin-bottom: 15px;
+}
 .info:hover img.desktopsmartphone-icon{
-  max-height: 60%;
-  max-width: 60%;
+  -webkit-transform: scale(1.2,1.2);
+  -moz-transform:scale(1.2,1.2);
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
 }
 .info:hover .highlight-word{
   color: @DarkGreen;
@@ -132,11 +138,12 @@
 .about{
   background-color: rgba(15,103,24,0.6);
   font-family: @FreliFont;
+  margin-bottom: 150px;
 }
 .about-info{
   margin-top: 100px;
-  margin-bottom: 150px;
   text-align: center;
+  margin-bottom: 50px;
 }
 .about-header{
   font-size: 300%;
@@ -146,6 +153,48 @@
 .about-text{
   padding-top: 50px;
   font-size: 110%;
+}
+.about-fotos{
+  max-height: 50%;
+  max-width: 50%;
+  margin-bottom: 25px;
+  position: relative;
+}
+.about-foto-text-elias{
+  position: absolute;
+  top: 40%;
+  bottom: 0;
+  left: 12%;
+  right: 0;
+  visibility: hidden;
+  font-weight: bold;
+  font-size: 125%;
+  opacity: 0;
+}
+.about-foto-text-fre{
+  position: absolute;
+  top: 40%;
+  bottom: 0;
+  left: 65%;
+  right: 0;
+  visibility: hidden;
+  font-weight: bold;
+  font-size: 125%;
+  opacity: 0;
+}
+.elias:hover .about-foto-text-elias{
+  visibility: visible;
+  opacity: 1;
+}
+.elias:hover img{
+  opacity: 0.4;
+}
+.fre:hover .about-foto-text-fre{
+  visibility: visible;
+  opacity: 1;
+}
+.fre:hover img{
+  opacity: 0.4;
 }
 /* Contact */
 .contact{
