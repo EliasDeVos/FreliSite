@@ -2,10 +2,8 @@
 @FreliFont: 'Ubuntu', sans-serif;
 @DarkGreen: #0f6718;
 
-.navbar{
-  background-color: @DarkRedColor;
-}
 
+/* Header logo*/
 #title-image
 {
   background-image: url("../img/RedYellowGrain.png");
@@ -33,11 +31,29 @@
     height: 300px;
   }
 }
+/* general */
+.vertical-line {
+  border-right: solid @DarkGreen;
+  opacity: 0.2;
+}
 
+.align{
+  display: flex;
+}
 .centre{
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+/* navbar*/
+.freli-navbar{
+  width: 119px;
+  height: 50px;
+}
+.navbar{
+  background-color: @DarkRedColor;
 }
 .navbar.center .navbar-inner {
   text-align: center;
@@ -45,15 +61,6 @@
 .navbar.center .navbar-inner .nav {
   float: none;
   display:inline-block;
-}
-.desktopsmartphone-icon{
-  max-height: 50%;
-  max-width: 50%;
-}
-
-.freli-navbar{
-  width: 119px;
-  height: 50px;
 }
 .navbar-nav > li{
   padding-left:30px;
@@ -78,31 +85,44 @@
   font-family: @FreliFont;
 }
 
-.verticalLine {
-  border-right: solid @DarkGreen;
-  opacity: 0.2;
+
+/* What we do*/
+.what-we-do{
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-
-.align{
-  display: flex;
+.desktopsmartphone-icon{
+  max-height: 50%;
+  max-width: 50%;
 }
-
-
 .info{
   text-align: center;
   align-items: center;
   margin-top: 10px;
   font-family: @FreliFont;
 }
-.info:hover img{
+.info:hover img.desktopsmartphone-icon{
   max-height: 60%;
   max-width: 60%;
 }
-.info:hover .websiteWord{
-  font-size: 150%;
+.info:hover .highlight-word{
+  color: @DarkGreen;
+  font-style: italic;
 }
 
-.websiteWord{
-  color: @DarkGreen;
+.highlight-word{
   font-weight: bold;
+}
+/* About*/
+.about{
+  background-color: #edffdf;
+  font-family: @FreliFont;
+}
+.about-info{
+  margin-top: 150px;
+  margin-bottom: 150px;
+  text-align: center;
+}
+.about-header{
+  font-size: 300%;
 }
