@@ -9,11 +9,11 @@
     <title>Freli</title>
 </head>
 <body>
-<section id="title-image">
+<div id="title-image">
     <div id="Titleimage">
         <img src="img/FreliZwartRoodSolutions.png" class="centre logo-freli"/>
     </div>
-</section>
+</div>
 <nav class="navbar navbar-fixed-top center" id="nav_bar">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -27,13 +27,13 @@
             </button>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Collect the nav links, form, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-inner" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-                <li id="freli-navbar"><img src="img/FreliZwartRoodLetters.png" class="centre freli-navbar"></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#what-we-do">Wat wij doen</a></li>
+                <li><a href="#about">Over ons</a></li>
+                <li id="freli-navbar"><img src="img/FreliZwartRoodLetters.png" class="freli-navbar"></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="#">Blabla</a></li>
             </ul>
         </div>
@@ -41,8 +41,11 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
-<div class="what-we-do">
+<div class="what-we-do" id="what-we-do">
 <div class="container">
+    <div class="row what-we-do-header">
+        <span>Wat wij doen</span>
+    </div>
     <div class="row">
         <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="row align">
@@ -85,40 +88,81 @@
     </div>
 </div>
 </div>
-<div class="about">
+<div class="about" id="about">
     <div class="container">
         <div class="about-info">
             <span class="about-header">Over ons</span><br>
-            Wij zijn een nieuw informatica bedrijf. gemotiveerde jonge mensen die graag de informatica wereld willen
-            verbeteren.<br>
-            Onze interesse en motivatie is groot en hierdoor zijn we ook constant bezig met de nieuwste technologien te
-            gebruiken.<br>
-            Wij maken als bedrijf websites en bussiness software,<br>
-            als u als bedrijf nood heeft een een gepersonaliseerd programma dan bent u bij ons aan het juiste adres.<br>
-            Werkt u met een klein bedrijf met maar een paar klanten of met een groot bedrijf met meerdere filialen, wie
-            helpen u een oplossing te vinden<br>
-            Als u vragen heeft of als u interesse heeft aarzel niet om ons te mailen.
+            <div class="about-text">
+                Wij zijn een nieuw informatica bedrijf. gemotiveerde jonge mensen die graag de informatica wereld willen
+                verbeteren.<br>
+                Onze interesse en motivatie is groot en hierdoor zijn we ook constant bezig met de nieuwste technologien te
+                gebruiken.<br>
+                Wij maken als bedrijf websites en bussiness software,<br>
+                als u als bedrijf nood heeft een een gepersonaliseerd programma dan bent u bij ons aan het juiste adres.<br>
+                Werkt u met een klein bedrijf met maar een paar klanten of met een groot bedrijf met meerdere filialen, wie
+                helpen u een oplossing te vinden<br>
+                Als u vragen heeft of als u interesse heeft aarzel niet om ons te mailen.
+            </div>
         </div>
     </div>
 </div>
-<div class="container">
-    <div>
-        <img src="img/FreliZwartRoodSolutions.png" class="centre logo-freli"/>
+<div class="contact" id="contact">
+    <div class="container">
+        <div class="row contact-header">
+           <span> Contacteer ons </span>
+        </div>
+        <div class="row">
+            <form class="form-horizontal" role="form" method="post" action="/cgi-bin/form.cgi">
+                <input type="hidden" name="DEBUG" value="0">
+                <input type="hidden" name="MAILFILE" value="Freli_Site/form/sjabloon.txt">
+                <input type="hidden" name="MAILTO" value="frelisolutions@gmail.com">
+                <input type="hidden" name="REPLYFAULT" value="Freli_Site/form/fout.html">
+                <input type="hidden" name="REPLYOK" value="Freli_Site/form/verzonden.html">
+                <div class="form-group">
+                    <label for="naam" class="col-sm-2 control-label">Naam</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="naam" name="naam" placeholder="Naam" value="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Voornaam" class="col-sm-2 control-label">Voor naam</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="Voornaam" name="Voornaam" placeholder="Voornaam" value="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="MAILFROM" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="MAILFROM" name="MAILFROM" placeholder="jouwmail@domain.com" value="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Onderwerp" class="col-sm-2 control-label">Onderwerp</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="onderwerp" name="SUBJECT" placeholder="Onderwerp" value="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="omschrijving" class="col-sm-2 control-label">Bericht</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" rows="4" id="omschrijving" name="omschrijving" placeholder="Bericht"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-10 col-sm-offset-2">
+                        <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-    <div>
-        <img src="img/FreliZwartRoodSolutions.png" class="centre logo-freli"/>
-    </div>
-    <div>
-        <img src="img/FreliZwartRoodSolutions.png" class="centre logo-freli"/>
-    </div>
-    <div>
-        <img src="img/FreliZwartRoodSolutions.png" class="centre logo-freli"/>
-    </div>
-    <div>
-        <img src="img/FreliZwartRoodSolutions.png" class="centre logo-freli"/>
-    </div>
-    <div>
-        <img src="img/FreliZwartRoodSolutions.png" class="centre logo-freli"/>
+</div>
+<div id="footer" class="footer navbar-default">
+    <div class="container">
+        <br>
+
+        <p class="muted credit">Credits to <a href="#title-image">FreliSolutions</a>,
+        <br>
     </div>
 </div>
 <script src="js/less.js" type="text/javascript"></script>

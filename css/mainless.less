@@ -49,8 +49,15 @@
 
 /* navbar*/
 .freli-navbar{
-  width: 119px;
+  overflow: visible;
+  max-width: 100px;
+  max-height: 150px;
+  position: relative;
+  left: -30px;
+}
+#freli-navbar{
   height: 50px;
+  width: 100px;
 }
 .navbar{
   background-color: @DarkRedColor;
@@ -88,8 +95,16 @@
 
 /* What we do*/
 .what-we-do{
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 50px;
+}
+.what-we-do-header span{
+  font-size: 200%;
+  font-family: @FreliFont;
+}
+.what-we-do-header{
+  text-align: center;
+  padding-bottom: 50px;
 }
 .desktopsmartphone-icon{
   max-height: 50%;
@@ -115,14 +130,42 @@
 }
 /* About*/
 .about{
-  background-color: #edffdf;
+  background-color: rgba(15,103,24,0.6);
   font-family: @FreliFont;
 }
 .about-info{
-  margin-top: 150px;
+  margin-top: 100px;
   margin-bottom: 150px;
   text-align: center;
 }
 .about-header{
   font-size: 300%;
+}
+.about-info span{
+}
+.about-text{
+  padding-top: 50px;
+  font-size: 110%;
+}
+/* Contact */
+.contact{
+  margin-top: 50px;
+}
+.contact-header{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contact-header span{
+  font-size: 200%;
+  font-family: @FreliFont;
+}
+/* footer */
+.footer{
+  background-color: @DarkRedColor;
+  margin-top: 60px;
+  font-family: @FreliFont;
+  color: #ffffff;
+}
+.footer a{
+  color: #000000;
 }
